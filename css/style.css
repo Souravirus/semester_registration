@@ -2,6 +2,10 @@
     /*! padding: 0; */
     margin: 0;
 }
+a{
+    text-decoration: none;
+    color: #175a82;
+}
 #header{
     background-color:#FF7069;
     opacity:0.5;
