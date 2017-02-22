@@ -5,21 +5,21 @@
 #header{
     background-color:#FF7069;
     opacity:0.5;
-    
     /*! border: 8px solid; */
-    padding: 10px;
+    padding: 0px;
     position: fixed;
     width: 100%;
+    box-sizing: border-box;
 }
 #heading_text{
     display: inline;
-    margin-right:900px;
-    margin-top:100px;
-    margin-left:50px;
+    position: relative;
+//    top: 10px;
+    left:20px;
+    margin-right:800px;
 }
 #menu{
     display: inline;
-    margin-top:100px;
 }
 .menu_button{
     display: inline;
@@ -27,13 +27,40 @@
 }
 #main_content_area{
     background-color: bisque;
-    padding: 10px;
-    padding-top: 70px;
+    padding: 20px;
+    padding-top: 90px;
     padding-bottom: 70px;
 }
 #footer{
     width: 100%;
-    background-color: aqua;
+    background-color:black;
+    opacity: 0.3;
+    color: white;
     position: fixed;
     bottom: 0px;
+}
+
+#footer_text{
+    position:relative;
+    left:10px;
+}
+
+@media screen and (max-width: 1200px){
+    #heading_text{
+        margin-right: 500px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #heading_text{
+        margin-right: 200px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #heading_text{
+        margin-right: 30px;
+        left: 10px;
+        top: 5px;
+    }
 }
